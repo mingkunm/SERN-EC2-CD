@@ -1,0 +1,3 @@
+node_modules/
+.DS_Store
+luxebidet-ec2-key.pem

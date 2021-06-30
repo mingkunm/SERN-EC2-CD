@@ -1,0 +1,30 @@
+{
+  "name": "ern-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "server": "nodemon app.js --ignore './client/'",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ern",
+    "aws",
+    "ec2",
+    "react",
+    "express"
+  ],
+  "author": "Mingkun Ma",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
